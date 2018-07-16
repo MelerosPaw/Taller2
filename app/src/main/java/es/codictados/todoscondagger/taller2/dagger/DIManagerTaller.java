@@ -4,14 +4,15 @@ public class DIManagerTaller {
 
     private static ComponenteTaller sComponente;
 
-    private DIManagerTaller(){}
-
-    public static void init() {
-        sComponente = DaggerComponenteTaller.builder()
-                .build();
-    }
+    private DIManagerTaller() {}
 
     public static ComponenteTaller getComponente() {
+
+        if (sComponente == null) {
+            sComponente = DaggerComponenteTaller.builder()
+                    .build();
+        }
+
         return sComponente;
     }
 }

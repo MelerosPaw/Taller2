@@ -18,9 +18,4 @@ public class ModuloCajaHerramientas {
     Grasa provideGrasa() {
         return new Grasa();
     }
-
-//    @Provides
-//    MartilloPercutor provideMartilloPercutor() {
-//        return new MartilloPercutor();
-//    }
 }

@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void incluirResultado(String resultado) {
-        String nuevoResultado = resultados.getText() + "\n" + resultado + "\n";
+        String nuevoResultado = resultados.getText() + resultado + "\n\n";
         resultados.setText(nuevoResultado);
         scrollHastaElFinal();
     }
